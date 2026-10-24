@@ -315,7 +315,7 @@ export default function ServicesPage({ setActivePage }) {
               smart, result-driven solutions.
             </p>
 
-            <a href="#featured-shopify" className="btn-yellow">
+            <a href="#saas-section" className="btn-yellow">
               Explore All Services <ArrowUpRight size={18} />
             </a>
           </div>
@@ -767,146 +767,7 @@ export default function ServicesPage({ setActivePage }) {
       </section>
 
       {/* ========================================================
-          2. FEATURED SOLUTION: SHOPIFY DEVELOPMENT
-         ======================================================== */}
-      <section
-        id="featured-shopify"
-        className="blueprint-grid"
-        style={{
-          padding: '125px 28px',
-          color: '#ffffff',
-          position: 'relative',
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '1440px',
-            margin: '0 auto',
-            display: 'grid',
-            gridTemplateColumns: '1.05fr 1.35fr 1fr',
-            gap: '44px',
-            alignItems: 'center',
-          }}
-          className="featured-shopify-grid"
-        >
-          {/* Left: Headline & Body */}
-          <div>
-            <div className="section-badge badge-white">
-              <span className="dot" />
-              <span>FEATURED SOLUTION</span>
-            </div>
-            <h2
-              style={{
-                fontFamily: "'Oswald', sans-serif",
-                fontSize: 'clamp(44px, 5.2vw, 68px)',
-                fontWeight: 700,
-                lineHeight: 0.95,
-                textTransform: 'uppercase',
-                marginBottom: '20px',
-                color: '#ffffff',
-                letterSpacing: '-0.02em',
-              }}
-            >
-              SHOPIFY <br />
-              <span style={{ color: '#ffea00' }}>DEVELOPMENT</span>
-            </h2>
-            <p
-              style={{
-                fontSize: '16px',
-                lineHeight: 1.65,
-                color: 'rgba(255, 255, 255, 0.92)',
-                marginBottom: '30px',
-              }}
-            >
-              We build high-converting Shopify stores that are fast, secure and fully
-              optimized for sales. From custom themes to app integrations, we create
-              eCommerce experiences that bring your brand to life.
-            </p>
-            <a href="#services-contact" className="btn-yellow">
-              Get Started <ArrowUpRight size={18} />
-            </a>
-          </div>
-
-          {/* Center: Pixel-Perfect Shopify Laptop, Mobile & 3D Bag Asset with Yellow Sun */}
-          <div style={{ position: 'relative', width: '100%', maxWidth: '640px', margin: '0 auto' }}>
-            {/* Top-left yellow spark doodle */}
-            <div style={{ position: 'absolute', top: '15px', left: '15px', zIndex: 10 }}>
-              <YellowSparksDoodle />
-            </div>
-
-            <img
-              src={`${import.meta.env.BASE_URL}shopify-showcase.jpg`}
-              alt="Shopify Development Showcase"
-              style={{
-                width: '100%',
-                height: 'auto',
-                display: 'block',
-                borderRadius: '18px',
-                filter: 'drop-shadow(0 25px 55px rgba(0, 0, 0, 0.45))',
-              }}
-            />
-          </div>
-
-          {/* Right: Checklist & Doodle */}
-          <div style={{ position: 'relative' }}>
-            <ul
-              style={{
-                listStyle: 'none',
-                padding: 0,
-                margin: '0 0 32px 0',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '16px',
-              }}
-            >
-              {[
-                'Custom Store Design',
-                'Theme Customization',
-                'App Integration',
-                'Payment Setup',
-                'Ongoing Support',
-              ].map((item, idx) => (
-                <li
-                  key={idx}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '12px',
-                    fontSize: '15.5px',
-                    fontWeight: 600,
-                    color: '#ffffff',
-                  }}
-                >
-                  <div
-                    style={{
-                      width: '24px',
-                      height: '24px',
-                      borderRadius: '50%',
-                      backgroundColor: '#ffea00',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: '#0c1024',
-                      flexShrink: 0,
-                    }}
-                  >
-                    <Check size={15} strokeWidth={3} />
-                  </div>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            {/* Handwritten Doodle: "Your Store Our Expertise" */}
-            <div style={{ position: 'relative', marginTop: '12px' }}>
-              <YourStoreDoodle />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ========================================================
-          3. SAAS SOLUTIONS & ECOMMERCE SOLUTIONS (SINGLE BANNER)
+          2. SAAS SOLUTIONS & ECOMMERCE SOLUTIONS (SINGLE BANNER)
          ======================================================== */}
       <section
         id="saas-section"
@@ -1194,7 +1055,7 @@ export default function ServicesPage({ setActivePage }) {
       </section>
 
       {/* ========================================================
-          4. TWO-COLUMN: AMAZON VA SERVICES & BUSINESS DEVELOPMENT
+          3. TWO-COLUMN: AMAZON VA SERVICES & BUSINESS DEVELOPMENT
          ======================================================== */}
       <section
         id="amazon-section"
@@ -1448,6 +1309,147 @@ export default function ServicesPage({ setActivePage }) {
       </section>
 
       {/* ========================================================
+          4. FEATURED SOLUTION: SHOPIFY DEVELOPMENT
+         ======================================================== */}
+      <section
+        id="featured-shopify"
+        className="blueprint-grid"
+        style={{
+          padding: '125px 28px',
+          color: '#ffffff',
+          position: 'relative',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '1440px',
+            margin: '0 auto',
+            display: 'grid',
+            gridTemplateColumns: '1fr 1.35fr 1fr',
+            gap: '40px',
+            alignItems: 'center',
+          }}
+          className="featured-shopify-grid"
+        >
+          {/* Left: Badge, Title & Copy */}
+          <div>
+            <div className="section-badge badge-yellow">
+              <span className="dot" />
+              <span>FEATURED SOLUTION</span>
+            </div>
+
+            <h2
+              style={{
+                fontFamily: "'Oswald', sans-serif",
+                fontSize: 'clamp(42px, 5vw, 68px)',
+                fontWeight: 700,
+                lineHeight: 1.0,
+                textTransform: 'uppercase',
+                letterSpacing: '-0.02em',
+                margin: '20px 0',
+                color: '#ffffff',
+              }}
+            >
+              SHOPIFY <br />
+              <span style={{ color: '#ffea00' }}>DEVELOPMENT</span>
+            </h2>
+
+            <p
+              style={{
+                fontSize: '15.5px',
+                lineHeight: 1.7,
+                color: 'rgba(255, 255, 255, 0.9)',
+                marginBottom: '30px',
+              }}
+            >
+              We build high-converting Shopify stores that are fast, secure and fully
+              optimized for sales. From custom themes to app integrations, we create
+              eCommerce experiences that bring your brand to life.
+            </p>
+            <a href="#services-contact" className="btn-yellow">
+              Get Started <ArrowUpRight size={18} />
+            </a>
+          </div>
+
+          {/* Center: Pixel-Perfect Shopify Laptop, Mobile & 3D Bag Asset with Yellow Sun */}
+          <div style={{ position: 'relative', width: '100%', maxWidth: '640px', margin: '0 auto' }}>
+            {/* Top-left yellow spark doodle */}
+            <div style={{ position: 'absolute', top: '15px', left: '15px', zIndex: 10 }}>
+              <YellowSparksDoodle />
+            </div>
+
+            <img
+              src={`${import.meta.env.BASE_URL}shopify-showcase.jpg`}
+              alt="Shopify Development Showcase"
+              style={{
+                width: '100%',
+                height: 'auto',
+                display: 'block',
+                borderRadius: '18px',
+                filter: 'drop-shadow(0 25px 55px rgba(0, 0, 0, 0.45))',
+              }}
+            />
+          </div>
+
+          {/* Right: Checklist & Doodle */}
+          <div style={{ position: 'relative' }}>
+            <ul
+              style={{
+                listStyle: 'none',
+                padding: 0,
+                margin: '0 0 32px 0',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '16px',
+              }}
+            >
+              {[
+                'Custom Store Design',
+                'Theme Customization',
+                'App Integration',
+                'Payment Setup',
+                'Ongoing Support',
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '12px',
+                    fontSize: '15px',
+                    fontWeight: 600,
+                    color: '#ffffff',
+                  }}
+                >
+                  <span
+                    style={{
+                      width: '22px',
+                      height: '22px',
+                      borderRadius: '50%',
+                      backgroundColor: '#ffea00',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: '#0c1024',
+                      flexShrink: 0,
+                    }}
+                  >
+                    <Check size={14} strokeWidth={3} />
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* Handwritten Doodle: "Your Store Our Expertise" */}
+            <div style={{ position: 'relative', marginTop: '12px' }}>
+              <YourStoreDoodle />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================
           5. CLIENT SUCCESS STORIES (BLUEPRINT GRID)
          ======================================================== */}
       <section
@@ -1456,6 +1458,7 @@ export default function ServicesPage({ setActivePage }) {
           padding: '125px 28px',
           color: '#ffffff',
           position: 'relative',
+          borderTop: '1px solid rgba(255, 255, 255, 0.12)',
         }}
       >
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
