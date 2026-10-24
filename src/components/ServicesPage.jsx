@@ -112,7 +112,7 @@ export default function ServicesPage({ setActivePage }) {
       title: 'SHOPIFY STOREFRONTS & BESPOKE LIQUID',
       description: 'High-converting custom Shopify stores, tailor-made Liquid themes, 1.2s load speeds, and frictionless checkout optimization that turns visitors into repeat buyers.',
       icon: <ShopifyIcon />,
-      image: '/shopify-showcase.jpg',
+      image: `${import.meta.env.BASE_URL}shopify-showcase.jpg`,
       targetAnchor: '#featured-shopify',
       anchorLabel: 'Explore Shopify Deep Dive',
       chips: ['+240% Sales Lift', '1.2s Fast Load', 'Top 1% Stores'],
@@ -128,7 +128,7 @@ export default function ServicesPage({ setActivePage }) {
       title: 'SCALABLE SAAS WEB APPLICATIONS',
       description: 'End-to-end cloud platforms built with React, Node.js, real-time analytics, and high-security multi-tenant architectures engineered to handle millions of queries.',
       icon: <SaasIcon />,
-      image: '/saas-dashboard-laptop.jpg',
+      image: `${import.meta.env.BASE_URL}saas-dashboard-laptop.jpg`,
       targetAnchor: '#saas-section',
       anchorLabel: 'Explore SaaS Architecture',
       chips: ['99.99% Uptime', 'Sub-50ms Latency', 'SOC2 Compliant'],
@@ -160,7 +160,7 @@ export default function ServicesPage({ setActivePage }) {
       title: 'AMAZON FBA & STORE OPERATIONS',
       description: 'Full-service Amazon store management: high-converting A+ content, aggressive keyword indexing, optimized PPC campaigns, and 24/7 FBA inventory operations.',
       icon: <AmazonIcon />,
-      image: '/amazon-va-mockup.jpg',
+      image: `${import.meta.env.BASE_URL}amazon-va-mockup.jpg`,
       targetAnchor: '#amazon-section',
       anchorLabel: 'Explore Amazon VA Suite',
       chips: ['98.4% Buy Box Win', '14.2% PPC ACoS', '24/7 Store Ops'],
@@ -176,7 +176,7 @@ export default function ServicesPage({ setActivePage }) {
       title: 'B2B STRATEGIC REVENUE EXPANSION',
       description: 'Targeted executive outreach, high-ticket sales pipelines, strategic joint ventures, and enterprise negotiations that close lucrative long-term contracts.',
       icon: <GrowthChartIcon />,
-      image: '/business-handshake.jpg',
+      image: `${import.meta.env.BASE_URL}business-handshake.jpg`,
       targetAnchor: '#amazon-section',
       anchorLabel: 'Explore Business Development',
       chips: ['$2.4M+ Pipeline', '42% Close Rate', 'Tier-1 Alliances'],
@@ -835,7 +835,7 @@ export default function ServicesPage({ setActivePage }) {
             </div>
 
             <img
-              src="/shopify-showcase.jpg"
+              src={`${import.meta.env.BASE_URL}shopify-showcase.jpg`}
               alt="Shopify Development Showcase"
               style={{
                 width: '100%',
@@ -1042,7 +1042,7 @@ export default function ServicesPage({ setActivePage }) {
 
             {/* TeamFlow Laptop Asset */}
             <img
-              src="/saas-dashboard-laptop.jpg"
+              src={`${import.meta.env.BASE_URL}saas-dashboard-laptop.jpg`}
               alt="TeamFlow SaaS Dashboard Laptop"
               style={{
                 width: '100%',
@@ -1308,7 +1308,7 @@ export default function ServicesPage({ setActivePage }) {
                 <MoreSalesDoodle />
               </div>
               <img
-                src="/amazon-va-mockup.jpg"
+                src={`${import.meta.env.BASE_URL}amazon-va-mockup.jpg`}
                 alt="Amazon VA Services Mockup"
                 style={{
                   width: '100%',
@@ -1429,7 +1429,7 @@ export default function ServicesPage({ setActivePage }) {
                 }}
               />
               <img
-                src="/business-handshake.jpg"
+                src={`${import.meta.env.BASE_URL}business-handshake.jpg`}
                 alt="Executive Business Handshake with leather portfolio"
                 style={{
                   width: '100%',
